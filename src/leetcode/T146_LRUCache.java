@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class T146_LRUCache {
 
@@ -96,7 +95,7 @@ public class T146_LRUCache {
             if(head == null && tail == null){//empty list now
                 head = newNode;
                 tail = newNode;
-            }else{//append to the freq list
+            }else{//append to the frequency list
                 tail.next = newNode;
                 newNode.prev = tail;
                 tail = newNode;
